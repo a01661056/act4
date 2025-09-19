@@ -70,9 +70,12 @@ def move():
 
     draw()
 
+    #Uncomment these lines to make the game end when a target gets to the screen limit
+    '''
     for target in targets:
         if not inside(target):
             return
+    '''
 
     ontimer(move, 50)
 
